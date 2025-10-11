@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Phybot_Dog">
+  <link
+    name="QG">
+    <inertial>
+      <origin
+        xyz="-7.9149008920116E-06 0.00110777362686082 0.00968309486647675"
+        rpy="0 0 0" />
+      <mass
+        value="69.4268444694369" />
+      <inertia
+        ixx="1.62675565213314"
+        ixy="1.12267629366067E-05"
+        ixz="3.58206261397234E-06"
+        iyy="0.543088138156943"
+        iyz="-0.00834140371984384"
+        izz="1.78322762851206" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="QZ1">
+    <inertial>
+      <origin
+        xyz="0.0775437506849822 0.0361646529985529 0.0941220864479111"
+        rpy="0 0 0" />
+      <mass
+        value="11.3988150862893" />
+      <inertia
+        ixx="0.0311334284055965"
+        ixy="-0.00407181413551423"
+        ixz="0.00101554448927632"
+        iyy="0.0242969505523253"
+        iyz="0.000474029045671959"
+        izz="0.0231025497820495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.345098039215686 0.988235294117647 0.309803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QZ1"
+    type="revolute">
+    <origin
+      xyz="0.085 -0.352 0"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="QG" />
+    <child
+      link="QZ1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0.9594444"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="QZ2">
+    <inertial>
+      <origin
+        xyz="-0.216772378161901 0.11261042952501 0.0345129696167537"
+        rpy="0 0 0" />
+      <mass
+        value="16.5988809568701" />
+      <inertia
+        ixx="0.0347212588302202"
+        ixy="-0.0121947891064067"
+        ixz="0.000225495242361344"
+        iyy="0.0537532289816826"
+        iyz="-0.000130254150186785"
+        izz="0.0769247486646341" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QZ2"
+    type="revolute">
+    <origin
+      xyz="0.119632627888837 0.0557856105497737 0.0979999999999999"
+      rpy="-1.57079632679491 1.54461638801504 -1.13446401379631" />
+    <parent
+      link="QZ1" />
+    <child
+      link="QZ2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-4.954"
+      upper="0"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="QZ3">
+    <inertial>
+      <origin
+        xyz="0.083680060652255 -0.0642898732189237 -0.0345107664602058"
+        rpy="0 0 0" />
+      <mass
+        value="3.16664282573473" />
+      <inertia
+        ixx="0.0139248241113602"
+        ixy="-0.0144258902355322"
+        ixz="-0.000652334086005751"
+        iyy="0.0234200845164083"
+        iyz="0.000554397584694246"
+        izz="0.0364577743970918" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QZ3"
+    type="revolute">
+    <origin
+      xyz="-0.266103249953458 0.138524583970524 0.0739999999999982"
+      rpy="0 0 -0.479965544298501" />
+    <parent
+      link="QZ2" />
+    <child
+      link="QZ3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-5.0589"
+      upper="0"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="QZ4">
+    <inertial>
+      <origin
+        xyz="1.74372358774377E-07 1.58097531177681E-08 -0.0299816036835657"
+        rpy="0 0 0" />
+      <mass
+        value="12.1034935771713" />
+      <inertia
+        ixx="0.0295746209071568"
+        ixy="-2.46337733033133E-08"
+        ixz="-1.39073912097755E-08"
+        iyy="0.0295748255202387"
+        iyz="3.49305904958312E-09"
+        izz="0.0535608230133727" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QZ4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QZ4"
+    type="continuous">
+    <origin
+      xyz="0.24575 -0.17207 -0.024"
+      rpy="0 0 0.95993" />
+    <parent
+      link="QZ3" />
+    <child
+      link="QZ4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="14.5"
+      velocity="73.3" />
+  </joint>
+  <link
+    name="QY1">
+    <inertial>
+      <origin
+        xyz="-0.0677392880102253 0.0316052348999514 0.0895118426562399"
+        rpy="0 0 0" />
+      <mass
+        value="5.09686249578635" />
+      <inertia
+        ixx="0.0153664252086449"
+        ixy="0.00193982194815184"
+        ixz="-0.000987885206133284"
+        iyy="0.0121102026440304"
+        iyz="0.000459394223461394"
+        izz="0.0119694068374009" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QY1"
+    type="revolute">
+    <origin
+      xyz="-0.085 -0.352 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="QG" />
+    <child
+      link="QY1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.95944"
+      upper="0"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="QY2">
+    <inertial>
+      <origin
+        xyz="-0.184064126522959 0.101645346154838 -0.0334146881109333"
+        rpy="0 0 0" />
+      <mass
+        value="10.2969358983131" />
+      <inertia
+        ixx="0.0242253572445075"
+        ixy="-0.0126507606308741"
+        ixz="-0.000249433879387364"
+        iyy="0.0419226694388048"
+        iyz="0.000151223504975348"
+        izz="0.0601637589871316" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QY2"
+    type="revolute">
+    <origin
+      xyz="-0.11963 0.055786 0.098"
+      rpy="0.43633 1.5708 0" />
+    <parent
+      link="QY1" />
+    <child
+      link="QY2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="4.954"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="QY3">
+    <inertial>
+      <origin
+        xyz="0.0819688267903985 0.0664580637604949 -0.0345107762679036"
+        rpy="0 0 0" />
+      <mass
+        value="3.16664773141865" />
+      <inertia
+        ixx="0.0146862958343489"
+        ixy="0.014654604368603"
+        ixz="-0.000637605247239148"
+        iyy="0.0226586765776174"
+        iyz="-0.000571294294275789"
+        izz="0.0364578301626592" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QY3"
+    type="revolute">
+    <origin
+      xyz="-0.26239 0.14544 -0.074"
+      rpy="3.1416 0 -0.47997" />
+    <parent
+      link="QY2" />
+    <child
+      link="QY3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="5.0589"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="QY4">
+    <inertial>
+      <origin
+        xyz="1.67560837427416E-07 -1.58148127926694E-08 0.0299816036755503"
+        rpy="0 0 0" />
+      <mass
+        value="12.1034935809726" />
+      <inertia
+        ixx="0.0295746209014341"
+        ixy="2.46379259260035E-08"
+        ixz="1.38955662673185E-08"
+        iyy="0.0295748255349005"
+        iyz="3.4938581150751E-09"
+        izz="0.0535608230194681" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/QY4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="QY4"
+    type="continuous">
+    <origin
+      xyz="0.241157058185308 0.17844683602521 -0.0240000000000011"
+      rpy="-3.14159265358979 0 -0.933751149817149" />
+    <parent
+      link="QY3" />
+    <child
+      link="QY4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="14.5"
+      velocity="73.3" />
+  </joint>
+  <link
+    name="HZ1">
+    <inertial>
+      <origin
+        xyz="-0.0677392878816737 0.0316052349963488 0.0895118426822175"
+        rpy="0 0 0" />
+      <mass
+        value="5.09686250857397" />
+      <inertia
+        ixx="0.015366425277405"
+        ixy="0.00193982196213994"
+        ixz="-0.000987885193670879"
+        iyy="0.0121102026793238"
+        iyz="0.000459394256869541"
+        izz="0.0119694068809009" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HZ1"
+    type="revolute">
+    <origin
+      xyz="0.085 0.352 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="QG" />
+    <child
+      link="HZ1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.95944"
+      upper="0"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="HZ2">
+    <inertial>
+      <origin
+        xyz="-0.184064126616538 0.101645346274349 -0.0334146881231786"
+        rpy="0 0 0" />
+      <mass
+        value="10.2969358766824" />
+      <inertia
+        ixx="0.0242253572380105"
+        ixy="-0.0126507606198981"
+        ixz="-0.00024943388754415"
+        iyy="0.0419226693514055"
+        iyz="0.00015122350487637"
+        izz="0.0601637588949353" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HZ2"
+    type="revolute">
+    <origin
+      xyz="-0.11963 0.055786 0.098"
+      rpy="0.43633 1.5708 0" />
+    <parent
+      link="HZ1" />
+    <child
+      link="HZ2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="4.954"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="HZ3">
+    <inertial>
+      <origin
+        xyz="0.0819688268703376 0.0664580637949346 -0.034510776233403"
+        rpy="0 0 0" />
+      <mass
+        value="3.16664773532842" />
+      <inertia
+        ixx="0.0146862958321407"
+        ixy="0.0146546043672623"
+        ixz="-0.000637605246399743"
+        iyy="0.0226586765759784"
+        iyz="-0.0005712942932757"
+        izz="0.0364578301599943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HZ3"
+    type="revolute">
+    <origin
+      xyz="-0.26239 0.14544 -0.074"
+      rpy="3.1416 0 -0.47997" />
+    <parent
+      link="HZ2" />
+    <child
+      link="HZ3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="5.0589"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="HZ4">
+    <inertial>
+      <origin
+        xyz="1.67560837427416E-07 1.58148127094027E-08 -0.0299816036755503"
+        rpy="0 0 0" />
+      <mass
+        value="12.1034935809726" />
+      <inertia
+        ixx="0.0295746209014341"
+        ixy="-2.46379259277382E-08"
+        ixz="-1.38955662708316E-08"
+        iyy="0.0295748255349005"
+        iyz="3.49385810572435E-09"
+        izz="0.0535608230194681" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HZ4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HZ4"
+    type="continuous">
+    <origin
+      xyz="0.24116 0.17845 -0.024"
+      rpy="0 0 -0.93375" />
+    <parent
+      link="HZ3" />
+    <child
+      link="HZ4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="14.5"
+      velocity="73.3" />
+  </joint>
+  <link
+    name="HY1">
+    <inertial>
+      <origin
+        xyz="0.0775437506214224 0.0361646530532212 0.0941220864502537"
+        rpy="0 0 0" />
+      <mass
+        value="11.3988150957816" />
+      <inertia
+        ixx="0.0311334284563506"
+        ixy="-0.00407181414297934"
+        ixz="0.00101554448287208"
+        iyy="0.0242969505751019"
+        iyz="0.000474029070266143"
+        izz="0.0231025498111459" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.345098039215686 0.988235294117647 0.309803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HY1"
+    type="revolute">
+    <origin
+      xyz="-0.085 0.352 0"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="QG" />
+    <child
+      link="HY1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0.9594444"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="HY2">
+    <inertial>
+      <origin
+        xyz="0.216772378138329 0.112610429510572 -0.0345129696156308"
+        rpy="0 0 0" />
+      <mass
+        value="16.5988809616036" />
+      <inertia
+        ixx="0.0347212588396624"
+        ixy="0.0121947891185331"
+        ixz="0.000225495240221157"
+        iyy="0.0537532290074805"
+        iyz="0.000130254148952508"
+        izz="0.076924748699789" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HY2"
+    type="revolute">
+    <origin
+      xyz="0.119632627888841 0.0557856105497661 0.0979999999999999"
+      rpy="-1.57079632679489 -1.54461638801505 2.00712863979342" />
+    <parent
+      link="HY1" />
+    <child
+      link="HY2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-4.954"
+      upper="0"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="HY3">
+    <inertial>
+      <origin
+        xyz="-0.0836800606382357 0.0642898732080385 -0.0345107664530835"
+        rpy="0 0 0" />
+      <mass
+        value="3.16664282607749" />
+      <inertia
+        ixx="0.0139248241116449"
+        ixy="-0.0144258902361508"
+        ixz="0.000652334085999585"
+        iyy="0.0234200845176938"
+        iyz="-0.000554397584685117"
+        izz="0.0364577743986498" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HY3"
+    type="revolute">
+    <origin
+      xyz="0.266103249953459 0.138524583970524 -0.0739999999999986"
+      rpy="3.14159265358979 0 0.479965544298501" />
+    <parent
+      link="HY2" />
+    <child
+      link="HY3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-5.0589"
+      upper="0"
+      effort="500"
+      velocity="8.37" />
+  </joint>
+  <link
+    name="HY4">
+    <inertial>
+      <origin
+        xyz="-1.74372358663355E-07 -1.58097530900125E-08 -0.0299816036835657"
+        rpy="0 0 0" />
+      <mass
+        value="12.1034935771713" />
+      <inertia
+        ixx="0.0295746209071568"
+        ixy="-2.46337733033133E-08"
+        ixz="1.39073912102593E-08"
+        iyy="0.0295748255202386"
+        iyz="-3.49305904226688E-09"
+        izz="0.0535608230133727" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.643137254901961 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Phybot_Dog/meshes/HY4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HY4"
+    type="continuous">
+    <origin
+      xyz="-0.245745613286825 0.172072930905133 -0.0240000000000011"
+      rpy="0 0 0.959931088597001" />
+    <parent
+      link="HY3" />
+    <child
+      link="HY4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="14.5"
+      velocity="73.3" />
+  </joint>
+</robot>
