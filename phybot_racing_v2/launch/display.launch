@@ -1,0 +1,20 @@
+<launch>
+  <arg
+    name="model" />
+  <param
+    name="robot_description"
+    textfile="$(find 足式双臂机器人（竞速版）CURDF)/urdf/足式双臂机器人（竞速版）CURDF.urdf" />
+  <node
+    name="joint_state_publisher_gui"
+    pkg="joint_state_publisher_gui"
+    type="joint_state_publisher_gui" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find 足式双臂机器人（竞速版）CURDF)/urdf.rviz" />
+</launch>
