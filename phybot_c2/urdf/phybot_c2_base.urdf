@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="phybot_c2">
   <link
@@ -33,10 +35,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 0.0" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.07"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/base_link.STL" />
+      </geometry>
     </collision>
   </link>
   <link
@@ -69,7 +74,7 @@
           rgba="0.8902 0.8902 0.91373 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -77,7 +82,7 @@
         <mesh
           filename="package://phybot_c2/meshes/left_hip_pitch.STL" />
       </geometry>
-    </collision> -->
+    </collision>
   </link>
   <joint
     name="left_hip_pitch"
@@ -95,7 +100,7 @@
       lower="-3.05"
       upper="2.09"
       effort="200"
-      velocity="99.21" />
+      velocity="9.21" />
   </joint>
   <link
     name="left_hip_roll">
@@ -128,10 +133,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 0.0" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.05"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_hip_roll.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -150,7 +158,7 @@
       lower="-0.44"
       upper="3.05"
       effort="80"
-      velocity="98.9" />
+      velocity="8.9" />
   </joint>
   <link
     name="left_hip_yaw">
@@ -183,12 +191,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0 0 -0.12"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.18" radius="0.04"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_hip_yaw.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -207,7 +216,7 @@
       lower="-2.53"
       upper="2.53"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="left_knee">
@@ -240,12 +249,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-                xyz="0.01 0 -0.13"
-                rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.16" radius="0.04"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_knee.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -264,7 +274,7 @@
       lower="-0.05"
       upper="2.36"
       effort="80"
-      velocity="98.9" />
+      velocity="8.9" />
   </joint>
   <link
     name="left_ankle_pitch">
@@ -297,10 +307,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 -0.018" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.045"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_ankle_pitch.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -319,7 +332,7 @@
       lower="-1.57"
       upper="1.57"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="left_ankle_roll">
@@ -351,7 +364,7 @@
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -359,18 +372,6 @@
         <mesh
           filename="package://phybot_c2/meshes/left_ankle_roll.STL" />
       </geometry>
-    </collision> -->
-    <collision name="left_ankle_roll_1">
-        <origin rpy="0 1.57 0" xyz="0.04 -0.03 -0.04"/>
-        <geometry>
-            <cylinder length="0.24" radius="0.012"/>
-        </geometry>
-    </collision>
-    <collision name="left_ankle_roll_2">
-        <origin rpy="0 1.57 0" xyz="0.04 0.03 -0.04"/>
-        <geometry>
-            <cylinder length="0.24" radius="0.012"/>
-        </geometry>
     </collision>
   </link>
   <joint
@@ -389,7 +390,7 @@
       lower="-1.13"
       upper="1.13"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="right_hip_pitch">
@@ -421,7 +422,7 @@
           rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -429,7 +430,7 @@
         <mesh
           filename="package://phybot_c2/meshes/right_hip_pitch.STL" />
       </geometry>
-    </collision> -->
+    </collision>
   </link>
   <joint
     name="right_hip_pitch"
@@ -447,7 +448,7 @@
       lower="-3.05"
       upper="2.09"
       effort="200"
-      velocity="99.21" />
+      velocity="9.21" />
   </joint>
   <link
     name="right_hip_roll">
@@ -480,10 +481,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 0.0" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.05"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_hip_roll.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -502,7 +506,7 @@
       lower="-3.05"
       upper="0.44"
       effort="80"
-      velocity="98.9" />
+      velocity="8.9" />
   </joint>
   <link
     name="right_hip_yaw">
@@ -535,12 +539,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0 0 -0.12"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.18" radius="0.04"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_hip_yaw.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -559,7 +564,7 @@
       lower="-2.53"
       upper="2.53"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="right_knee">
@@ -592,12 +597,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0.01 0 -0.13"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.16" radius="0.04"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_knee.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -616,7 +622,7 @@
       lower="-0.05"
       upper="2.36"
       effort="80"
-      velocity="98.9" />
+      velocity="8.9" />
   </joint>
   <link
     name="right_ankle_pitch">
@@ -649,10 +655,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 -0.018" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.045"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_ankle_pitch.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -671,7 +680,7 @@
       lower="-1.57"
       upper="1.57"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="right_ankle_roll">
@@ -703,17 +712,14 @@
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
-    <collision name="right_ankle_roll_1">
-        <origin rpy="0 1.57 0" xyz="0.04 -0.03 -0.04"/>
-        <geometry>
-            <cylinder length="0.24" radius="0.012"/>
-        </geometry>
-    </collision>
-    <collision name="right_ankle_roll_2">
-        <origin rpy="0 1.57 0" xyz="0.04 0.03 -0.04"/>
-        <geometry>
-            <cylinder length="0.24" radius="0.012"/>
-        </geometry>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_ankle_roll.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -732,7 +738,7 @@
       lower="-1.13"
       upper="1.13"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="waist_yaw">
@@ -764,7 +770,7 @@
           rgba="0.901960784313726 0.901960784313726 0.901960784313726 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -772,7 +778,7 @@
         <mesh
           filename="package://phybot_c2/meshes/waist_yaw.STL" />
       </geometry>
-    </collision> -->
+    </collision>
   </link>
   <joint
     name="waist_yaw"
@@ -790,7 +796,7 @@
       lower="-2.62"
       upper="2.62"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="torso">
@@ -823,10 +829,13 @@
       </material>
     </visual>
     <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <box size="0.14 0.18 0.28"/>
+        <mesh
+          filename="package://phybot_c2/meshes/torso.STL" />
       </geometry>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.03"/>
     </collision>
   </link>
   <joint
@@ -872,7 +881,7 @@
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -880,11 +889,11 @@
         <mesh
           filename="package://phybot_c2/meshes/neck_yaw.STL" />
       </geometry>
-    </collision> -->
+    </collision>
   </link>
   <joint
     name="neck_yaw"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0 0 0.158"
       rpy="0 0 0" />
@@ -898,7 +907,7 @@
       lower="-2.62"
       upper="2.62"
       effort="9"
-      velocity="98.16" />
+      velocity="8.16" />
   </joint>
   <link
     name="neck_pitch">
@@ -907,14 +916,14 @@
         xyz="0.000251366786067411 -0.00969689232150911 -0.466443538650813"
         rpy="0 0 0" />
       <mass
-        value="0.05" />
+        value="0.01" />
       <inertia
-        ixx="0.00310958"
-        ixy="-0.0"
-        ixz="0.0"
-        iyy="0.00342399"
-        iyz="-0.0"
-        izz="0.00281571" />
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
     </inertial>
     <visual>
       <origin
@@ -931,15 +940,18 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 0.065" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.07"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/neck_pitch.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
     name="neck_pitch"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0 0 0.069"
       rpy="0 0 0" />
@@ -953,7 +965,7 @@
       lower="-0.61"
       upper="0.61"
       effort="9"
-      velocity="98.16" />
+      velocity="8.16" />
   </joint>
   <link
     name="left_shoulder_pitch">
@@ -985,7 +997,7 @@
           rgba="1 1 0.945098039215686 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -993,7 +1005,7 @@
         <mesh
           filename="package://phybot_c2/meshes/left_shoulder_pitch.STL" />
       </geometry>
-    </collision> -->
+    </collision>
   </link>
   <joint
     name="left_shoulder_pitch"
@@ -1011,7 +1023,7 @@
       lower="-3.58"
       upper="2.01"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="left_shoulder_roll">
@@ -1044,10 +1056,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 0.0" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.05"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_shoulder_roll.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -1066,7 +1081,7 @@
       lower="-0.35"
       upper="3.05"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="left_shoulder_yaw">
@@ -1099,12 +1114,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0 0 -0.09"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.14" radius="0.03"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_shoulder_yaw.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -1123,7 +1139,7 @@
       lower="-2.53"
       upper="2.53"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="left_elbow_pitch">
@@ -1156,12 +1172,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0 0 -0.17"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.22" radius="0.035"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/left_elbow_pitch.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -1180,7 +1197,7 @@
       lower="-2.36"
       upper="0"
       effort="9"
-      velocity="98.16" />
+      velocity="8.16" />
   </joint>
   <link
     name="right_shoulder_pitch">
@@ -1212,7 +1229,7 @@
           rgba="1 1 1 1" />
       </material>
     </visual>
-    <!-- <collision>
+    <collision>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -1220,7 +1237,7 @@
         <mesh
           filename="package://phybot_c2/meshes/right_shoulder_pitch.STL" />
       </geometry>
-    </collision> -->
+    </collision>
   </link>
   <joint
     name="right_shoulder_pitch"
@@ -1238,7 +1255,7 @@
       lower="-3.58"
       upper="2.01"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="right_shoulder_roll">
@@ -1271,10 +1288,13 @@
       </material>
     </visual>
     <collision>
-        <origin xyz="0.0 0 0.0" rpy="0 0 0"/> 
-        <geometry>
-            <sphere radius="0.05"/> 
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_shoulder_roll.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -1293,7 +1313,7 @@
       lower="-3.05"
       upper="0.35"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="right_shoulder_yaw">
@@ -1326,12 +1346,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0 0 -0.09"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.14" radius="0.03"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_shoulder_yaw.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -1350,7 +1371,7 @@
       lower="-2.53"
       upper="2.53"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
   <link
     name="right_elbow_pitch">
@@ -1383,12 +1404,13 @@
       </material>
     </visual>
     <collision>
-        <origin
-            xyz="0 0 -0.17"
-            rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.22" radius="0.035"/>
-        </geometry>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://phybot_c2/meshes/right_elbow_pitch.STL" />
+      </geometry>
     </collision>
   </link>
   <joint
@@ -1407,6 +1429,6 @@
       lower="-2.36"
       upper="0"
       effort="58"
-      velocity="98.37" />
+      velocity="8.37" />
   </joint>
 </robot>
