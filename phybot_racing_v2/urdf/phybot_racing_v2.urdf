@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot
   name="phybot_racing_v2">
+  <mujoco>
+        <compiler 
+        meshdir="../new_meshes/" 
+        balanceinertia="true" 
+        discardvisual="false" />
+  </mujoco>
+  <link name="world"/>
+  <joint name="floating_base_joint" type="floating">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
   <link
     name="base_link">
     <inertial>
@@ -357,13 +369,13 @@
     </collision> -->
 
     <collision name="left_ankle_pitch_1">
-        <origin rpy="0 1.57 0" xyz="0.03 -0.02 -0.064"/>
+        <origin rpy="0 1.57 0" xyz="0.03 -0.02 -0.043"/>
         <geometry>
             <cylinder length="0.28" radius="0.015"/>
         </geometry>
     </collision>
     <collision name="left_ankle_pitch_2">
-        <origin rpy="0 1.57 0" xyz="0.03 0.02 -0.064"/>
+        <origin rpy="0 1.57 0" xyz="0.03 0.02 -0.043"/>
         <geometry>
             <cylinder length="0.28" radius="0.015"/>
         </geometry>
@@ -729,13 +741,13 @@
     </collision> -->
 
     <collision name="right_ankle_pitch_1">
-        <origin rpy="0 1.57 0" xyz="0.03 -0.02 -0.064"/>
+        <origin rpy="0 1.57 0" xyz="0.03 -0.02 -0.043"/>
         <geometry>
             <cylinder length="0.28" radius="0.015"/>
         </geometry>
     </collision>
     <collision name="right_ankle_pitch_2">
-        <origin rpy="0 1.57 0" xyz="0.03 0.02 -0.064"/>
+        <origin rpy="0 1.57 0" xyz="0.03 0.02 -0.043"/>
         <geometry>
             <cylinder length="0.28" radius="0.015"/>
         </geometry>
