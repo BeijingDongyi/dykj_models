@@ -104,8 +104,8 @@
     <limit
       lower="-2.62"
       upper="2.62"
-      effort="500"
-      velocity="99.21" />
+      effort="600"
+      velocity="18" />
   </joint>
   <link
     name="left_hip_roll">
@@ -171,7 +171,7 @@
       lower="-0.17"
       upper="1.92"
       effort="200"
-      velocity="98.9" />
+      velocity="22" />
   </joint>
   <link
     name="left_hip_yaw">
@@ -236,8 +236,8 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="200"
-      velocity="98.37" />
+      effort="250"
+      velocity="22" />
   </joint>
   <link
     name="left_knee">
@@ -302,8 +302,8 @@
     <limit
       lower="0"
       upper="2.62"
-      effort="500"
-      velocity="99.21" />
+      effort="600"
+      velocity="18" />
   </joint>
   <link
     name="left_ankle_pitch">
@@ -360,8 +360,8 @@
     <limit
       lower="-0.87"
       upper="0.52"
-      effort="200"
-      velocity="98.79" />
+      effort="250"
+      velocity="22" />
   </joint>
   <link
     name="left_ankle_roll">
@@ -403,15 +403,15 @@
       </geometry>
     </collision> -->
     <collision name="left_ankle_roll_1">
-        <origin rpy="3.14 1.57 0" xyz="0.06 0.022 -0.055"/>
+        <origin rpy="3.14 1.57 0" xyz="0.05 0.03 -0.042"/>
         <geometry>
-            <cylinder length="0.25" radius="0.015"/>
+            <cylinder length="0.24" radius="0.015"/>
         </geometry>
     </collision>
     <collision name="left_ankle_roll_2">
-        <origin rpy="3.14 1.57 0" xyz="0.06 -0.022 -0.055"/>
+        <origin rpy="3.14 1.57 0" xyz="0.05 -0.03 -0.042"/>
         <geometry>
-            <cylinder length="0.25" radius="0.015"/>
+            <cylinder length="0.24" radius="0.015"/>
         </geometry>
     </collision>
   </link>
@@ -430,8 +430,8 @@
     <limit
       lower="-0.61"
       upper="0.61"
-      effort="60"
-      velocity="912.56" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="left_toe">
@@ -474,13 +474,13 @@
     </collision> -->
 
     <!-- <collision name="left_toe_1">
-        <origin rpy="3.14 1.57 0" xyz="0.04 0.022 -0.030"/>
+        <origin rpy="3.14 1.57 0" xyz="0.04 0.022 -0.042"/>
         <geometry>
             <cylinder length="0.1" radius="0.015"/>
         </geometry>
     </collision>
     <collision name="left_toe_2">
-        <origin rpy="3.14 1.57 0" xyz="0.04 -0.022 -0.030"/>
+        <origin rpy="3.14 1.57 0" xyz="0.04 -0.022 -0.042"/>
         <geometry>
             <cylinder length="0.1" radius="0.015"/>
         </geometry>
@@ -561,8 +561,8 @@
     <limit
       lower="-2.62"
       upper="2.62"
-      effort="500"
-      velocity="99.21" />
+      effort="600"
+      velocity="18" />
   </joint>
   <link
     name="right_hip_roll">
@@ -627,7 +627,7 @@
       lower="-1.92"
       upper="0.17"
       effort="200"
-      velocity="98.9" />
+      velocity="22" />
   </joint>
   <link
     name="right_hip_yaw">
@@ -692,8 +692,8 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="200"
-      velocity="98.37" />
+      effort="250"
+      velocity="22" />
   </joint>
   <link
     name="right_knee">
@@ -760,8 +760,8 @@
     <limit
       lower="0"
       upper="2.62"
-      effort="500"
-      velocity="99.21" />
+      effort="600"
+      velocity="18" />
   </joint>
   <link
     name="right_ankle_pitch">
@@ -818,8 +818,8 @@
     <limit
       lower="-0.87"
       upper="0.52"
-      effort="200"
-      velocity="98.79" />
+      effort="250"
+      velocity="22" />
   </joint>
   <link
     name="right_ankle_roll">
@@ -861,15 +861,15 @@
       </geometry>
     </collision> -->
     <collision name="right_ankle_roll_1">
-        <origin rpy="3.14 1.57 0" xyz="0.06 0.022 -0.055"/>
+        <origin rpy="3.14 1.57 0" xyz="0.05 0.03 -0.042"/>
         <geometry>
-            <cylinder length="0.25" radius="0.015"/>
+            <cylinder length="0.24" radius="0.015"/>
         </geometry>
     </collision>
     <collision name="right_ankle_roll_2">
-        <origin rpy="3.14 1.57 0" xyz="0.06 -0.022 -0.055"/>
+        <origin rpy="3.14 1.57 0" xyz="0.05 -0.03 -0.042"/>
         <geometry>
-            <cylinder length="0.25" radius="0.015"/>
+            <cylinder length="0.254" radius="0.015"/>
         </geometry>
     </collision>
 
@@ -890,8 +890,8 @@
     <limit
       lower="-0.61"
       upper="0.61"
-      effort="60"
-      velocity="912.56" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="right_toe">
@@ -1020,8 +1020,8 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="230"
-      velocity="98.37" />
+      effort="250"
+      velocity="22" />
   </joint>
   <link
     name="waist_roll">
@@ -1085,7 +1085,7 @@
       lower="-0.79"
       upper="0.79"
       effort="200"
-      velocity="98.9" />
+      velocity="22" />
   </joint>
   <link
     name="torso">
@@ -1318,7 +1318,7 @@
       lower="-2.79"
       upper="0.87"
       effort="200"
-      velocity="8.9" />
+      velocity="22" />
   </joint>
   <link
     name="left_shoulder_roll">
@@ -1379,10 +1379,10 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.17"
+      lower="-0.34"
       upper="3.14"
-      effort="200"
-      velocity="8.9" />
+      effort="135"
+      velocity="25" />
   </joint>
   <link
     name="left_shoulder_yaw">
@@ -1447,8 +1447,8 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="58"
-      velocity="8.16" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="left_elbow_pitch">
@@ -1505,8 +1505,8 @@
     <limit
       lower="-2.36"
       upper="0"
-      effort="58"
-      velocity="8.16" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="left_elbow_yaw">
@@ -1549,16 +1549,16 @@
     </collision> -->
     <collision>
         <origin
-            xyz="0 0 -0.05"
+            xyz="0 0 0.02"
             rpy="0 0 0"/>
         <geometry>
-            <cylinder length="0.22" radius="0.03"/>
+            <cylinder length="0.05" radius="0.03"/>
         </geometry>
     </collision>
   </link>
   <joint
     name="left_elbow_yaw"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="-0.01 0 -0.123"
       rpy="0 0 0" />
@@ -1571,8 +1571,8 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="58"
-      velocity="8.16" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="right_shoulder_pitch">
@@ -1630,7 +1630,7 @@
       lower="-2.79"
       upper="0.87"
       effort="200"
-      velocity="8.9" />
+      velocity="22" />
   </joint>
   <link
     name="right_shoulder_roll">
@@ -1692,9 +1692,9 @@
       xyz="1 0 0" />
     <limit
       lower="-3.14"
-      upper="0.17"
-      effort="200"
-      velocity="8.9" />
+      upper="0.34"
+      effort="135"
+      velocity="25" />
   </joint>
   <link
     name="right_shoulder_yaw">
@@ -1759,8 +1759,8 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="58"
-      velocity="8.16" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="right_elbow_pitch">
@@ -1817,8 +1817,8 @@
     <limit
       lower="-2.36"
       upper="0"
-      effort="58"
-      velocity="8.16" />
+      effort="89"
+      velocity="25" />
   </joint>
   <link
     name="right_elbow_yaw">
@@ -1861,16 +1861,16 @@
     </collision> -->
     <collision>
       <origin
-          xyz="0 0 -0.05"
+          xyz="0 0 0.02"
           rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.22" radius="0.03"/>
+        <cylinder length="0.05" radius="0.03"/>
       </geometry>
     </collision>
   </link>
   <joint
     name="right_elbow_yaw"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="-0.01 0 -0.123"
       rpy="0 0 0" />
@@ -1883,7 +1883,7 @@
     <limit
       lower="-1.57"
       upper="1.57"
-      effort="58"
-      velocity="8.16" />
+      effort="89"
+      velocity="25" />
   </joint>
 </robot>
